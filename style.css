@@ -1,0 +1,533 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.body{
+   background-color: #F2F2F2;
+}
+header {
+    background-color: #FF0000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 100px;
+    z-index: 1212;
+  
+    box-shadow: 0 20px 30px black;
+}
+
+
+.menu-icon {
+    cursor: pointer;
+    display: none;
+    color: #EFF7F6;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.menu-icon:hover {
+    color: #ff702a;
+}
+.logo {
+  
+    width: 150px;
+    height: auto;
+    max-width: 100%;
+}
+
+
+
+.logo:hover{
+    transform: scale(1.1);
+    box-shadow: 0 20px 30px black;
+    border: #27251F 4px solid;
+    border-radius: 25px;
+}
+.navbar {
+
+    display: flex;
+
+}
+
+.navbar li {
+
+    margin: 0 30px;
+
+}
+
+.navbar ul {
+align-items: center;
+
+}
+.navbar li a {
+    color: #D8D0C1;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.navbar li:not(.black) a:hover {
+    color: black;
+}
+
+.black a {
+    background-color: black;
+    border-radius: 30px;
+    padding: 0 10px;
+}
+
+
+
+
+section {
+  width: 100%;
+margin-top: 100px;
+  background-color: whitesmoke;
+}
+
+
+
+
+
+
+.categoria .box {
+    /* Altre regole CSS per i tuoi box... */
+    transition: all 0.3s ease; /* Transizione su tutte le proprietà con durata di 0.3 secondi */
+ background-color: #FF0000;
+    padding: 20px;
+  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 18px;
+    text-align: center;
+   margin: 100px 100px;
+}
+
+.box:hover {
+    /* Stili aggiuntivi quando il mouse è sopra il box */
+    transform: scale(1.05); /* Ingrandisce il box del 5% quando il mouse è sopra di esso */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Aggiunge un'ombra leggera */
+}
+
+
+.pulsante{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+
+
+
+
+  }
+ #pulsanteVisualizza {
+    display: flex;
+    position: relative;
+    top: 60px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    display: flex;
+    justify-content: center; /* Centrato orizzontalmente */
+    align-items: center; /* Centrato verticalmente */
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #ddd;
+    background-color: #FF0000;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   }
+   
+   #pulsanteVisualizza:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+   }
+   
+   #pulsanteVisualizza:active {
+    box-shadow: none;
+   }
+.categoria .box h2{
+margin-bottom: 20px;
+}
+
+/* Main section styles */
+.categoria {
+    padding: 50px 0;
+    background-color: #27251F;
+}
+
+.categoria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+
+
+.categoria-img img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    
+  
+}
+
+.categoria .btm {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color red 0.3s ease;
+
+}
+
+.btm:hover {
+    background-color: whitesmoke;
+    color: #FF5733;
+}
+
+
+
+i{
+    font-size: 30px;
+    position: relative;
+    top: -5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #555;
+}
+
+table th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+table tr:hover {
+    background-color: #666;
+}
+
+/* Carello section styles */
+.carrello {
+    text-align: center;
+    width: 100%;
+  font-size: 20px;
+    background-color: #f2f2f2;
+}
+
+
+
+input {
+    width: 30px; /* Imposta la larghezza desiderata */
+}
+
+.carrello table {
+    margin: 0 auto;
+}
+
+.carrello th, .carrello td {
+    padding: 10px 20px;
+}
+
+.carrello button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carrello button:hover {
+    background-color: #555;
+}
+
+/* About and Contact section styles */
+.btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color red 0.3s ease;
+    position: relative;
+    top: 30px
+}
+
+
+
+
+.service-img {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    text-align: center;
+}
+
+
+.service-img .box {
+    padding: 5px 20px;
+    text-align: center;
+    margin: 30px;
+}
+
+.service-img .box .box-img img {
+    width: 150px;
+    max-width: 100%;
+}
+
+
+
+
+
+.service-img .box h3 {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+
+
+.service h2{
+    font-size: 30px;
+    margin: 10px;
+    color: #27251F;
+    text-align: center;
+position: relative;
+top: 20px;
+}
+
+
+
+.service #more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    display: flex;
+font-size: 12px;
+
+    justify-content: center; /* Centrato orizzontalmente */
+    align-items: center; /* Centrato verticalmente */
+    margin-top: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #ddd;
+    background-color: #FF0000;
+    border-style: solid;
+    border-width: 2px 2px 2px 2px;
+    border-color: rgba(255, 255, 255, 0.333);
+    border-radius: 40px 40px 40px 40px;
+    padding: 16px 24px 16px 28px;
+    transform: translate(0px, 0px) rotate(0deg);
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+   }
+   
+   .service #more:hover {
+    color: #516d91;
+    background-color: #E5EDF5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+   }
+   
+   .service #more:active {
+    box-shadow: none;
+   }
+
+/* Footer styles */
+
+
+
+
+.contact {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    color: #fff;
+}
+
+.social a {
+    font-size: 30px;
+    margin: 10px;
+    color: #fff;
+}
+
+.social i {
+    background: #27251F;
+    color: #fff;
+    margin-top: 40px;
+
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.social i:hover {
+    background:  #FF5733;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.contact-text {
+    margin: 20px 0 20px;
+}
+
+.contact-text a {
+    padding: 20px;
+    color: #fff;
+}
+
+.contact-text a:hover {
+    color: #FF5733;
+}
+
+.contact p {
+    text-align: center;
+    color: #fff;;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+    body {
+        overflow-x: hidden; /* Nasconde la barra di scorrimento orizzontale */
+    }
+
+    .logo {
+        position: relative;
+        left: -90px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .navbar {
+        margin-top: 75px;
+    }
+
+    .menu-icon {
+        display: block;
+        position: relative;
+        left: 30px;
+    }
+
+    .navbar {
+        display: none;
+        margin-top: 0;
+    }
+
+    .navbar.active {
+        display: flex;
+        flex-direction: column;
+        background-color: #FF0000;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+       
+    }
+
+    .navbar.active li {
+        margin: 10px 4px;
+
+    }
+
+    .navbar.active li a {
+        color: #EFF7F6;
+        font-size: 14px;
+
+    }
+
+
+
+
+
+   
+
+ 
+    .service-img {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-img .box {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+
+
+    .service .pulsante{
+
+position: relative;
+top: 150px;
+
+
+    }
+    .contact {
+        display: none;
+    }
+
+
+.categoria .box {
+ background-color: #FF0000;
+    padding: 5px;
+    width: 100%;
+    margin: 100px auto;
+}
+
+.categoria-img img {
+ 
+   width: 100px;
+    
+  
+}
+
+.categoria .box table {
+    font-size: 11px; /* Esempio: riduci la dimensione del testo */
+    padding: 3px; /* Esempio: riduci il padding delle celle */
+}
+
+
+
+
+}
+
+
